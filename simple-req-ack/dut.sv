@@ -11,7 +11,7 @@ module dut (
 		if (!rst_n)
 			req_ff <= '0;
 		else
-			if (ack)
+			if (req_ff)
 				req_ff <= '0;
 			else
 				req_ff <= req;
